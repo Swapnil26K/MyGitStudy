@@ -3,22 +3,22 @@ package com.frost.pages;
 public class StaticCheck 
 {
 	static int rollNumber;
-	String studName;
+	String studentName;
 	
 	public void enterStudentInfo(String studName)
 	{
-		this.studName=studName;
+		this.studentName=studName;
 		enterRollNumber();		
 	}
 	
-	public void enterRollNumber()
+	public static void enterRollNumber()
 	{
 		rollNumber++;
 	}
 	
 	public String getStudentName()
 	{
-		return studName;
+		return studentName;
 	}
 	
 	public int getRollNumber()
